@@ -5,6 +5,7 @@ import com.techproed.utilities.Driver;
 import com.techproed.utilities.TestBaseCross;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 public class PositiveTest extends TestBaseCross {
     @Test
@@ -16,5 +17,6 @@ public class PositiveTest extends TestBaseCross {
         userNameBox.sendKeys("manager2");
         passwordBox.sendKeys("Man1ager2!");
         loginButton.click();
+        Assert.assertFalse(true);
     }
 }
